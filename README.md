@@ -1,6 +1,7 @@
 # Nanoflow commons
 
-A collection of commonly used nanoflow actions.
+A collection of commonly used nanoflow actions that are usable across all platforms: web, hybrid mobile and native
+mobile.
 
 | Category            | Action                       |
 | :------------------ | :--------------------------- |
