@@ -15,7 +15,7 @@ mobile.
 |                     | Open map                     |
 |                     | Open URL                     |
 |                     | Send text message            |
-|                     | Is wifi connection           |
+|                     | Share                        |
 | Geolocation         | Geocode                      |
 |                     | Get current location         |
 |                     | Request location permission  |
