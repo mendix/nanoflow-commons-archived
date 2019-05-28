@@ -15,14 +15,14 @@ import ReactNative from "react-native";
 function Share(url?: string, text?: string, title?: string): Promise<boolean> {
     // BEGIN USER CODE
 
+    if (!text && !url) {
+        throw new TypeError("It is required to provide at least one of input parameters 'Text' and 'Url'");
+    }
+
     // Native platform
     // Documentation https://facebook.github.io/react-native/docs/share
     if (navigator && navigator.product === "ReactNative") {
         const RNShare: typeof ReactNative.Share = require("react-native").Share;
-
-        if (!text && !url) {
-            throw new TypeError("It is required to provide at least one of input parameters 'Text' and 'Url'");
-        }
 
         const content =
             url && text ? { message: text + "\n" + url, title } : url ? { url, title } : { message: text!, title };
